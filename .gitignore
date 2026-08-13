@@ -1,0 +1,30 @@
+# Environment / secrets — never commit these
+.env
+*.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.Python
+
+# Output folders — too large / ephemeral to version
+jobs_*/
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

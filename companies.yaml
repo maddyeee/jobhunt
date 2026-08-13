@@ -1,0 +1,117 @@
+# Company handles per ATS. Add/remove freely.
+# Greenhouse board handle is the URL slug at boards.greenhouse.io/<handle>
+greenhouse:
+  - tenstorrent
+  - rivosinc
+  - groqinc
+  - cerebras
+  - sambanovasystems
+  - astera-labs
+  - lightmatter
+  - efinixinc
+  - siliconlabs
+  - achronix
+  - mythic
+  - flexcompute
+  - untetherai
+  - dmatrix
+  - positron
+  - etched
+  - rain
+  - extropic
+  - modularinc
+  - together
+  - anthropic
+  - openai
+  - databricks
+  - snowflake
+  - stripe
+  - airbnb
+  - discord
+  - figma
+
+# Lever board handle: jobs.lever.co/<handle>
+lever:
+  - ampere
+  - blockworks
+  - marvell
+  - nuvia
+  - mixpanel
+  - netflix
+  - palantir
+  - shopify
+  - plaid
+
+# Ashby handle: jobs.ashbyhq.com/<handle>
+ashby:
+  - hazyresearch
+  - anthropic
+  - together-ai
+  - inflection
+  - runwayml
+  - character
+  - normal-computing
+
+# Workday endpoints — full URLs to the CxS jobs API
+# Format: https://<sub>.myworkdayjobs.com/wday/cxs/<tenant>/<site>/jobs
+#
+# VERIFIED WORKING (probed 2026-08-13): Intel, NVIDIA, Micron, Marvell, Analog Devices, NXP
+#
+# BROKEN (422/404) — commented out until URLs are updated. Fix instructions:
+#   1. Open the company's public careers page in Chrome
+#   2. Open DevTools -> Network -> filter for "jobs"
+#   3. Click Search on the careers page
+#   4. Copy the POST URL from Network (looks like .../wday/cxs/<tenant>/<site>/jobs)
+#   5. Paste it below and uncomment the entry
+workday:
+  - name: Intel
+    url: https://intel.wd1.myworkdayjobs.com/wday/cxs/intel/External/jobs
+  - name: NVIDIA
+    url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs
+  - name: Micron
+    url: https://micron.wd1.myworkdayjobs.com/wday/cxs/micron/External/jobs
+  - name: Marvell
+    url: https://marvell.wd1.myworkdayjobs.com/wday/cxs/marvell/MarvellCareers2/jobs
+  - name: Analog Devices
+    url: https://analogdevices.wd1.myworkdayjobs.com/wday/cxs/analogdevices/External/jobs
+  - name: NXP
+    url: https://nxp.wd3.myworkdayjobs.com/wday/cxs/nxp/careers/jobs
+
+  # --- NOT Workday — moved to dedicated fetchers or covered by aggregators ---
+  # Qualcomm   → Eightfold AI (bot-protected) → aggregator_targets below
+  # AMD        → iCIMS → dedicated amd_icims.py fetcher (always runs, no key needed)
+  # Broadcom   → SAP SuccessFactors (unconfirmed) → aggregator_targets below
+  # TI         → Oracle Talent Mgmt → aggregator_targets below
+  # Microchip  → ATS TBD → aggregator_targets below
+  # Renesas    → Workday (wrong slug) → aggregator_targets below
+  # Infineon   → ATS TBD → aggregator_targets below
+
+# Companies covered via aggregators (JSearch + SerpAPI).
+# These are bot-protected portals, custom APIs, or unconfirmed ATS that can't
+# be scraped directly. Adding a company here causes a targeted search like
+# "Apple ASIC RTL verification engineer" to run through both aggregators.
+#
+# SerpAPI budget:  100 searches/month free  (~3/day for daily runs)
+# JSearch budget:  200 requests/month free  (~6/day for daily runs)
+#
+# Load split: JSearch handles generic keyword queries;
+#             SerpAPI handles company-targeted queries below.
+# If you add many companies here, consider upgrading to a paid tier.
+aggregator_targets:
+  - Apple
+  - Google
+  - Qualcomm
+  - Broadcom
+  - Texas Instruments
+  - Microchip Technology
+  - Renesas
+  - Infineon
+  - Samsung Semiconductor
+  - MediaTek
+  - Arm
+  - Cadence
+  - Synopsys
+  - Lattice Semiconductor
+  - Skyworks
+  - Qorvo
+  - Silicon Labs

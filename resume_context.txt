@@ -1,0 +1,32 @@
+MADHAV RAJ — San Jose, CA — rajmadhav794@gmail.com — (408) 401-6932
+
+SUMMARY
+Memory & silicon validation engineer with 2+ years at ARM delivering 100% functional/code coverage on SoC tape-outs and 40% faster verification throughput through Python automation. Hands-on DRAM device researcher (4F² VLSI, Sentaurus TCAD, C–V/I–V characterization) with deep expertise in UVM-based verification, protocol validation (I2C, AXI, AHB), and scripted test automation across complex SoC and standards-based designs.
+
+TECHNICAL SKILLS
+Memory & Devices: DRAM cell design (4F²), DDR architecture, DIMM validation, capacitance extraction, C–V/I–V characterization, retention/leakage analysis, Sentaurus TCAD
+Protocols & Interfaces: I2C, I3C, AXI, AHB, CHI, APB — simulation & protocol validation
+Test Automation: Python (test scripts, regression, data analysis), C/C++, Tcl, Perl, Unix/Linux, MATLAB
+Verification Tools: VCS, Mentor QuestaSim, Veloce, Synopsys Zebu, SystemVerilog, UVM, FPGA emulation
+Lab / Silicon Validation: Oscilloscopes, protocol analyzers, waveform analysis, power supply, data timing generators
+
+EDUCATION
+M.S., Electrical Engineering — San Jose State University, CA — GPA: 3.8 / 4.0 — Expected June 2027
+Relevant coursework: SoC Design, Principles of Semiconductor Devices, ASIC CMOS Design, UVM-Based Verification
+
+B.E., Electronics & Communication — M.S. Ramaiah Institute of Technology, India — GPA: 8.62 / 10 — June 2023
+
+EXPERIENCE
+Research Assistant — Memory Device Engineering | San Jose State University | San Jose, CA | Oct 2025 – Present
+- Engineered CMOS-level 4F² DRAM cell structures in Sentaurus TCAD; achieved 15% improvement in data retention and 20% reduction in leakage current across process, voltage, and temperature corners.
+- Executed layout-aware device simulations with parasitic modeling and capacitance extraction, directly correlating structural geometry with switching speed, retention, and manufacturability.
+- Built ML-driven simulation pipeline that accelerated device optimization 5×, cutting manual data extraction by 90%; structured datasets for C–V, I–V, and transient analysis.
+
+Design & Verification Engineer | ARM Embedded Technologies | Bengaluru, India | Jul 2023 – Jul 2025
+- Delivered 100% functional and code coverage for ARM SoC/CSS tape-out releases; validated AMBA protocols (AXI, AHB, CHI, I2C) in UVM-based constrained-random environments using VCS and Questa.
+- Debugged RTL functional issues across subsystem-level simulations in collaboration with architecture, IP, and software teams, ensuring integration readiness for production tape-outs.
+- Authored SystemVerilog and Python utilities for regression automation and AMBA protocol validation, boosting verification throughput by 40% and reducing manual simulation-control effort.
+- Built Solution Explorer Platform enabling 60% faster SoC/CSS configuration (ARM Quality Summit 2024); automated end-to-end release pipeline reducing cycle from 30 hours → 4 hours.
+
+Verification Engineering Intern | ARM Embedded Technologies | Bengaluru, India | Jan 2023 – Jul 2023
+- Developed Python/SystemVerilog regression automation scripts for AXI/AHB protocol validation, cutting manual verification effort and accelerating RTL bring-up on SoC components.
